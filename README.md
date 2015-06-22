@@ -1,10 +1,5 @@
 # Hubot
 
-This is a version of GitHub's Campfire bot, hubot. He's pretty cool.
-
-This version is designed to be deployed on [Heroku][heroku]. This README was generated for you by hubot to help get you started. Definitely update and improve to talk about your own instance, how to use and deploy, what functionality he has, etc!
-
-[heroku]: http://www.heroku.com
 
 ### Testing Hubot Locally
 
@@ -78,7 +73,14 @@ this functionality you can follow the following steps.
 To enable third-party scripts that you've added you will need to add the package
 name as a double quoted string to the `external-scripts.json` file in this repo.
 
-## Deployment
+## Deployment with Docker
+
+```bash
+docker run -e HUBOT_HIPCHAT_JID=xxx@chat.hipchat.com -e HUBOT_HIPCHAT_PASSWORD=password -e HUBOT_HIPCHAT_JOIN_PUBLIC_ROOMS=false --rm=true -d --name=alfred codemancers/hubot
+```
+
+
+## Deployment to Heroku
 
     % heroku create --stack cedar
     % git push heroku master
