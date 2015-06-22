@@ -10,3 +10,4 @@ RUN chown -R hubot:hubot alfred
 USER hubot
 WORKDIR alfred
 RUN npm install
+CMD ./bin/hubot --adapter hipchat
