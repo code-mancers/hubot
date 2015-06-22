@@ -76,7 +76,7 @@ name as a double quoted string to the `external-scripts.json` file in this repo.
 ## Deployment with Docker
 
 ```bash
-docker run -e HUBOT_HIPCHAT_JID=xxx@chat.hipchat.com -e HUBOT_HIPCHAT_PASSWORD=password -e HUBOT_HIPCHAT_JOIN_PUBLIC_ROOMS=false --rm=true -d --name=alfred codemancers/hubot
+docker run -e HUBOT_HIPCHAT_JID=xxx@chat.hipchat.com -e HUBOT_HIPCHAT_PASSWORD=password -e HUBOT_HIPCHAT_JOIN_PUBLIC_ROOMS=false -d --name=alfred codemancers/hubot
 ```
 
 
